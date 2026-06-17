@@ -60,15 +60,43 @@ git push origin main
 
 ---
 
-## 💬 Типы коммитов
+## 💬 Как писать сообщения коммитов
 
-| Префикс | Когда использовать | Пример |
-|---------|-------------------|--------|
-| `feat:` | Новая функциональность | `feat: add contact form fix` |
-| `fix:` | Исправление ошибки | `fix: correct From header` |
-| `docs:` | Документация | `docs: add git cheatsheet` |
-| `refactor:` | Рефакторинг кода | `refactor: simplify mail block` |
+Формула:
+```bash
+git commit -m "тип: что сделал"
+```
+
+**Тип** — выбираешь из списка:
+
+| Тип | Когда использовать | Пример |
+|-----|--------------------|--------|
+| `feat:` | Добавил новую функцию или файл | `feat: add contact form fix` |
+| `fix:` | Исправил ошибку | `fix: correct From header` |
+| `docs:` | Добавил или изменил документацию | `docs: add git cheatsheet` |
+| `refactor:` | Переделал код без изменения поведения | `refactor: simplify mail block` |
 | `chore:` | Служебные изменения | `chore: update version to 1.2` |
+
+**Глаголы для описания** — коротко по-английски:
+
+| Глагол | Значение |
+|--------|----------|
+| `add` | добавил |
+| `update` | обновил |
+| `fix` | исправил |
+| `remove` | удалил |
+| `create` | создал |
+
+**Примеры:**
+```bash
+git commit -m "docs: add seo checklist"
+git commit -m "docs: update README catalog"
+git commit -m "feat: add contact form ocmod"
+git commit -m "fix: correct From header in mail"
+git commit -m "chore: update version to 1.3"
+```
+
+> 💡 Главное правило — читая сообщение коммита через год, ты должен понять **что именно было сделано** без открытия файлов.
 
 ---
 
